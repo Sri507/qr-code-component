@@ -1,0 +1,52 @@
+:root {
+  --white: hsl(0, 0%, 100%);
+  --slate-300: hsl(212, 45%, 89%);
+  --slate-500: hsl(216, 15%, 48%);
+  --slate-900: hsl(218, 44%, 22%);
+  --var-fs: 15px;
+  --var-ff: "Overpass", serif;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+body {
+  font-family: var(--var-ff);
+  height: 100svh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--slate-300);
+}
+.container {
+  background: var(--white);
+  width: 319px;
+  padding: 16px;
+  border-radius: 1rem;
+  box-shadow: 1px 1px 20px hsla(216, 15%, 48%, 0.1);
+}
+.container .qr-img {
+  border-radius: 10px;
+}
+.container .skill {
+  margin-top: 24px;
+  color: var(--slate-900);
+  text-align: center;
+  font-size: 1.35rem;
+  font-weight: 700;
+}
+.container .scan {
+  margin-top: 16px;
+  color: var(--slate-500);
+  text-align: center;
+  font-weight: 400;
+  padding-bottom: 24px;
+}
